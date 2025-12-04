@@ -35,8 +35,8 @@ const exportPdf = async () => {
 </script>
 
 <template>
-  <div class="bg-gray-100 p-8">
-    <div class="max-w-7xl mx-auto bg-white rounded-lg shadow-md p-6">
+  <div class="bg-white-100 p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-6">
       <UserForm />
       <div class="flex gap-4 mb-4">
         <Button
@@ -53,15 +53,10 @@ const exportPdf = async () => {
         />
       </div>
 
-      <div
-        id="export-content"
-        class="grid grid-cols-1 lg:grid-cols-2 gap-8 pb-8"
-      >
-        <div>
-          <UserTable />
-        </div>
+      <div id="export-content" class="pb-8">
+        <UserTable />
         <div
-          class="p-8 bg-white rounded-lg border border-gray-200"
+          class="mb-8 p-8 bg-white rounded-lg border border-gray-200 mt-8"
           style="page-break-inside: avoid"
         >
           <h2 class="text-lg font-semibold mb-4 text-gray-700">
