@@ -1,9 +1,9 @@
-import * as XLSX from "xlsx";
+import html2pdf from "html2pdf.js";
 
 export default defineNuxtPlugin((nuxtApp) => {
   return {
     provide: {
-      xlsx: XLSX,
+      html2pdf: html2pdf,
     },
   };
 });
